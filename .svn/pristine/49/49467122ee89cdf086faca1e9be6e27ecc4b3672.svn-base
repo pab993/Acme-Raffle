@@ -1,0 +1,22 @@
+code.name			= Code
+code.win			= Winner
+code.moment			= Moment
+code.user			= User
+code.prize			= Prize
+
+code.raffle			= Raffles	
+
+code.enter			= Input a code
+
+code.notFound		= Invalid code
+code.winner			= Winner code! You win the prize! Congratulations!
+code.winnerYet		= You have already entered this winner code
+code.otherWinner	= Another user has already entered this winner code before
+code.notWinner		= Valid code! But it has no prize
+code.notWinnerYet	= You have already entered this code
+code.otherNotWinner	= Another user has already entered this code before
+
+code.submit			= Input
+code.cancel			= Cancel
+
+code.commit.error	= Commit error

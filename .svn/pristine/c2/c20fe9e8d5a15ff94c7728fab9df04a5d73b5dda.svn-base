@@ -1,0 +1,8 @@
+delete.property					= Eliminar
+
+property.name					= Nombre
+add.property					= Añadir
+
+prize.error.addProperty			= No se puede añadir
+prize.error.deleteProperty		= No se puede eliminar
+prize.errorDefault				= Error

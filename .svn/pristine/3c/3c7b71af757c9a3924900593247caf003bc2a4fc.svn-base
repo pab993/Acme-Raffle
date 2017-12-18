@@ -1,0 +1,10 @@
+dashboard.ratioBanUnBanUsers					= The ration of banned versus non-banned users
+dashboard.minMaxAvgStddevOfPrizesPerRaffle		= The minimum, the maximum, the average, and the standard deviation of prizes per raffle
+dashboard.minMaxAvgStddevOfCodesPerPrize		= The minimum, the maximum, the average, and the standard deviation of codes per prize
+dashboard.minMaxAvgStddevOfValidCodesPerUser	= The minimum, the maximum, the average, and the standard deviation of valid codes entered by the users
+dashboard.findUsersOrderByValidCodes			= The customers who have entered more valid codes
+
+dashboard.avgStddevOfCommentsPerComentable		= The average and the standard deviation of the number of comments per comentable entity
+dashboard.avgStddevOfStarsPerComment			= The average and the standard deviation of the number of stars per comentable entity
+dashboard.avgStarsPerActorGroupByCountry		= The average number of stars per actor, grouped by country
+dashboard.avgStarsPerActorGroupByCity			= The average number of stars per actor, grouped by city

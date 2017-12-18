@@ -1,0 +1,59 @@
+
+package services;
+
+import java.util.Collection;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.Assert;
+
+import repositories.PropertyRepository;
+import domain.Manager;
+import domain.Prize;
+import domain.Property;
+
+@Service
+@Transactional
+public class PropertyService {
+
+	//Managed Repository =============================================================================
+
+	@Autowired
+	private PropertyRepository	propertyRepository;
+
+	//Services
+	// ===============================================================================================
+
+	@Autowired
+	private ManagerService		managerService;
+
+
+	//SCRUDs Methods
+
+	//===============================================================================================
+
+	public void delete(final Property property) {
+		Assert.notNull(property);
+
+		final Manager principal = this.managerService.findByPrincipal();
+		Assert.notNull(principal);
+
+		this.propertyRepository.delete(property);
+
+	}
+
+	public Property findOne(int propertyId) {
+		return propertyRepository.findOne(propertyId);
+	}
+
+	public Collection<Property> findAll() {
+		return propertyRepository.findAll();
+	}
+
+	public Collection<Property> findAllPropertyPrize(Prize prize) {
+		return prize.getProperties();
+	}
+
+	//Other Business Methods =========================================================================
+}
